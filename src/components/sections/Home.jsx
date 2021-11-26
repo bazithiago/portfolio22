@@ -1,8 +1,9 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 import Div100vh from 'react-div-100vh'
-import Image from 'next/image'
 import Header from '../navbar/Header' 
-import imgTeste from '../../../public/photos/testeimg.png'
+import imgTeste from '../../img/photos/testeimg.png'
+import { allContent } from '../../database/db'
 
 // import Project from '../sections/Project';
 // import ProjectsDatabase from '../../Database/projects';
@@ -24,25 +25,101 @@ const HomeStyles = styled.div`
         display: none;
     }
 `
-const BgImage = styled.div`
 
+const Banner = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1024px){
+
+    }
+`
+
+const TextBanner = styled.div`
+    width: 100%;
+    padding: 20% 0 0 10%;
+    margin-bottom: -20%;
+
+    p {
+        font-size: 2.5rem;
+        line-height: 2.25rem;
+        padding-right: 10%;
+    }
+    
+    .highlight {
+        font-weight: 700;
+    }
+    .normal {
+        font-weight: 300;
+        letter-spacing: ${(props) => (props.content === allContent.pt ? "-0.05rem" : "auto")};
+    }
+
+    @media screen and (min-width: 1024px){
+        width: 40%;
+        padding: 2% 0 0 10%;
+        margin-bottom: 0;
+
+        p {
+            font-size: 3rem;
+            line-height: 3rem;
+            padding-right: 0;
+        }
+        .normal {
+            font-size: ${(props) => (props.content === allContent.pt ? "2.7rem" : "3rem")};
+        }
+    }
+`
+
+const BgImage = styled.div`
+    width: 100%;
+    
+    img {
+        width: 110%;
+        object-fit: cover;
+        margin-left: 2%;
+    }
+
+    @media screen and (min-width: 1024px){
+        width: 60%;
+
+        img {
+            width: 100%;
+            margin-left: 0%;
+        }
+    }
 `
 
 const Home = () => {
+    const [content, setContent] = useState(allContent.en)
+
+    function handleLanguage() {
+        if (content === allContent.en) {
+            setContent(allContent.ptbr) 
+        } else {
+            setContent(allContent.en)
+        }
+    }
+
+    
     return(
         <Div100vh>
             <HomeStyles>
-                <Header />
-                <BgImage>
-                    <Image 
-                        src={imgTeste} 
-                        alt='teste'
-                        width={350}
-                        height={150}
-                        layout='fixed'
-                    >
-                    </Image>
-                </BgImage>
+                <Header handleLanguage={handleLanguage} content={content}/>
+                <Banner>
+                    <TextBanner>
+                        <p className="highlight">{content.home.banner.first}</p>
+                        <p className="highlight">{content.home.banner.second}</p>
+                        <p className="normal">{content.home.banner.third}</p>
+                    </TextBanner>
+                    <BgImage>
+                        <img src={imgTeste} alt='teste' />         
+                    </BgImage>
+
+                </Banner>
             </HomeStyles>
         </Div100vh>
     );

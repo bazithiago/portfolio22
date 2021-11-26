@@ -19,11 +19,11 @@ const HeaderStyles = styled.div`
     }
 `
 
-export default function Header() {
+export default function Header({ handleLanguage, content }) {
     return(
         <HeaderStyles>
             <h1>thiagovieira</h1>
-            <Menu />
+            <Menu handleLanguage={handleLanguage} content={content}/>
         </HeaderStyles>
     )
 }

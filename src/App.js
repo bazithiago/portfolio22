@@ -1,8 +1,12 @@
+import GlobalStyle from '../src/styles/GlobalStyle'
+import Home from '../src/components/sections/Home'
+
 function App() {
   return (
-    <h1>
-      Hello world
-    </h1>
+    <>
+      <GlobalStyle />
+      <Home />
+    </>
   );
 }
 
