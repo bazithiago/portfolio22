@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Image from 'next/image'
 
 const ButtonStyles = styled.a`
     min-width: 145px;
@@ -26,7 +25,7 @@ const ButtonStyles = styled.a`
 const Button = ({ children, href, target, name, src }) => {
     return(
         <ButtonStyles href={href} target={target}>
-            <Image alt={name} src={src} width={20} height={20}/>
+            <img alt={name} src={src} width={24}/>
             <p>{name}</p>
             {children}
         </ButtonStyles>

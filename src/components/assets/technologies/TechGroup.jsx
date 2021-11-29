@@ -24,7 +24,7 @@ const TechGroup = ({ data }) => {
                             key={tech.name}
                             alt={tech.name}
                             src={tech.src}
-                            size={22}
+                            size={32}
                         />
                     )
                 })}

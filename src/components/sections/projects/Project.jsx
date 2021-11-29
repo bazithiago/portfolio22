@@ -1,17 +1,19 @@
 import styled from 'styled-components';
-import TechGroup from '../assets/technologies/TechGroup';
-import Button from '../assets/buttons/PrimaryButton'
-import Image from 'next/image'
+import TechGroup from '../../assets/technologies/TechGroup';
+import Button from '../../assets/buttons/PrimaryButton'
 
 const ProjectStyles = styled.div`
     display: flex;
     max-width: 500px;
     flex-direction: column;
-    margin-bottom: 150px;
        
     h3 {
         font-weight: 400;
         margin: 5px 0 20px 0;
+    }
+
+    & > div > img {
+        width: 100%;
     }
     
     & > div > :nth-child(5)  {
@@ -41,12 +43,9 @@ const Project = ({ project }) => {
     return(
         <ProjectStyles>
             <div key={project.title}>
-                <Image 
+                <img 
                     alt={project.title}
                     src={project.image}
-                    width={350}
-                    height={150}
-                    layout='fixed'
                 />
                 <h1>{project.title}</h1>
                 <h3>{project.description}</h3>
@@ -62,7 +61,7 @@ const Project = ({ project }) => {
                                 name={socialMedia.name}
                                 src={socialMedia.src} 
                                 href={socialMedia.href} 
-                                target={socialMedia.target} 
+                                target={socialMedia.target}
                             />
                         ) 
                     })}

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 import 'balloon-css';
 
 
@@ -14,7 +13,7 @@ const TechIcon = ({ alt, src, size }) => {
             aria-label={alt}
             data-balloon-pos="up"
         >
-            <Image 
+            <img 
                 alt={alt}
                 src={src}
                 width={size}

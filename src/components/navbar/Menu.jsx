@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import styled from "styled-components";
-import { ReactComponent as MenuIcon } from '../../img/logos/menu.svg'
+import { ReactComponent as MenuIcon } from '../../img/icons/menu.svg'
 
 
 const MenuIconStyle = styled.div`
