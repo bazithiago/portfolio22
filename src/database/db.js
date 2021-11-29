@@ -48,7 +48,7 @@ export const allContent = {
             banner: {
                 first: 'Oi,',
                 second: "me chamo Thiago",
-                third: "projeto e desenvolvo interfaces para web"
+                third: "eu projeto e desenvolvo interfaces para web"
             }
         }
     },

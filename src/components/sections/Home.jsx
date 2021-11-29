@@ -94,13 +94,15 @@ const BgImage = styled.div`
 `
 
 const Home = () => {
-    const [content, setContent] = useState(allContent.en)
+    const [content, setContent] = useState(allContent.ptbr)
 
-    function handleLanguage() {
-        if (content === allContent.en) {
-            setContent(allContent.ptbr) 
-        } else {
-            setContent(allContent.en)
+    function handleLanguage(e) {
+        const language = e.target.dataset.lang
+        
+        if(language === 'allContent.ptbr') {
+            setContent(allContent.ptbr);
+        } else if (language === 'allContent.en') {
+            setContent(allContent.en);
         }
     }
 
