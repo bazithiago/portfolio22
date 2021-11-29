@@ -13,13 +13,18 @@ const HeaderStyles = styled.div`
     h1 {
         font-size: 1.8rem;
         margin-left: 45px;
+        cursor: pointer;
     }
 `
+
+const goToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 
 export default function Header({ handleLanguage, content }) {
     return(
         <HeaderStyles>
-            <h1>thiagovieira</h1>
+            <h1 onClick={goToTop}>thiagovieira</h1>
             <Menu handleLanguage={handleLanguage} content={content}/>
         </HeaderStyles>
     )
