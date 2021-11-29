@@ -57,13 +57,13 @@ const Navbar = styled.nav`
             cursor: pointer;
         }
 
-        a {
+        p {
             padding: 5px 20px;
             -webkit-appearance: inherit;
         }
     }
 
-    a:hover, .languages > p:hover {
+    p:hover, .languages > p:hover {
         background-color: white;
         color: black;
         transition: all 0.2s;
@@ -76,6 +76,7 @@ const Navbar = styled.nav`
             text-align: center;
             margin-bottom: 5%;
             padding: 5px 20px;
+            cursor: pointer;
         }
 
         p.languages:hover {
@@ -94,27 +95,39 @@ const Navbar = styled.nav`
 
 
 function Menu({ handleLanguage, content }) {
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
+    const [clicked, setClick] = useState(false);
+    
+    const handleClick = () => setClick(!clicked);
+    
+    const goToLink = (e) => {
+        const linkId = e.target.dataset.id;
+        handleClick();
+        setTimeout(()=>{
+            document.querySelector(linkId).scrollIntoView({
+                behavior: 'smooth'
+           });
+        }, 700)
+
+    }
 
     return (
         <>
             <MenuIconStyle onClick={handleClick}>
                 <MenuIcon />
             </MenuIconStyle>
-            <NavBackground clicked={click} onClick={handleClick}>&nbsp;</NavBackground>
-            <Navbar clicked={click}>
+            <NavBackground clicked={clicked} onClick={handleClick}>&nbsp;</NavBackground>
+            <Navbar clicked={clicked}>
                 <ul>
-                    {content.menu.navbar.map( li  => {
+                    {content.menu.navbar.map( item  => {
                         return (
-                            <li key={li.title}><a href={li.href} onClick={handleClick}>{li.title} </a></li>
+                            <li key={item.title}><p data-id={item.id} onClick={goToLink}>{item.title} </p></li>
                             )
                         })}
                 </ul>
                 <div className="languages">
                     <p className="languages"><strong>{content.menu.language}</strong></p>
-                    <p onClick={handleLanguage} data-lang='allContent.ptbr'>português</p>
-                    <p onClick={handleLanguage} data-lang='allContent.en'>english</p>
+                    <p onClick={handleLanguage} data-lang='ptbr'>português</p>
+                    <p onClick={handleLanguage} data-lang='en'>english</p>
                 </div>
             </Navbar>
         </>

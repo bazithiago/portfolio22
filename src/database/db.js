@@ -5,15 +5,15 @@ export const allContent = {
             navbar: [
             {
                 title: 'about',
-                href:'#about',
+                id:'#about',
             },
             {
                 title: 'projects',
-                href:'#projects',
+                id:'#projects',
             },
             {
                 title: 'contact',
-                href:'#contact',
+                id:'#contact',
             },
         ]
         },
@@ -32,23 +32,23 @@ export const allContent = {
             navbar: [
             {
                 title: 'sobre',
-                href:'#about',
+                id:'#about',
             },
             {
                 title: 'projetos',
-                href:'#projects',
+                id:'#projects',
             },
             {
                 title: 'contato',
-                href:'#contact',
+                id:'#contact',
             },
         ]
         },
         home: {
             banner: {
-                first: 'Oi,',
-                second: "me chamo Thiago",
-                third: "eu projeto e desenvolvo interfaces para web"
+                first: 'Oi, me',
+                second: "chamo Thiago",
+                third: "projeto layouts e desenvolvo interfaces para web"
             }
         }
     },

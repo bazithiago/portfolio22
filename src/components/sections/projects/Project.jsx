@@ -40,9 +40,11 @@ const ProjectStyles = styled.div`
 `
 
 const Project = ({ project }) => {
+    console.log(project.id)
+
     return(
         <ProjectStyles>
-            <div key={project.title}>
+            <div>
                 <img 
                     alt={project.title}
                     src={project.image}
@@ -67,9 +69,6 @@ const Project = ({ project }) => {
                     })}
                 </div>
             </div>
-             
-            
-                 
         </ProjectStyles>
     )
 }

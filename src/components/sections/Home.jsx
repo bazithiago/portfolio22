@@ -1,11 +1,10 @@
-import { useState } from 'react';
-import Header from '../navbar/Header';
-import Banner from '../sections/banner/Banner';
-import { allContent } from '../../database/db';
-import { FullPage, Slide } from 'react-full-page';
-import ProjectsDatabase from '../../database/projects';
-import Project from '../sections/projects/Project';
-import Projects from '../sections/projects/Projects';
+import { useState } from 'react'
+import Header from '../navbar/Header'
+import Banner from '../sections/banner/Banner'
+import { allContent } from '../../database/db'
+import { FullPage, Slide } from 'react-full-page'
+import ProjectsDatabase from '../../database/projects'
+import Project from '../sections/projects/Project'
 import { ProjectsStyles } from '../sections/projects/Projects'
 
 const Home = () => {
@@ -14,9 +13,9 @@ const Home = () => {
 	function handleLanguage(e) {
 		const language = e.target.dataset.lang;
 
-		if (language === 'allContent.ptbr') {
+		if (language === 'ptbr') {
 			setContent(allContent.ptbr);
-		} else if (language === 'allContent.en') {
+		} else if (language === 'en') {
 			setContent(allContent.en);
 		}
 	}
@@ -25,22 +24,22 @@ const Home = () => {
         <>
             <Header handleLanguage={handleLanguage} content={content} />
             <FullPage duration={700} >
-                <Slide>
+                <Slide id="about">
                     <Banner content={content} />
                 </Slide>
 
     
-                {ProjectsDatabase.map((project) => {
+                {ProjectsDatabase.map( project => {
                     return(
-                        <Slide>
+                        <Slide key={project.title} id="projects">
                             <ProjectsStyles>
                                 <Project project={project} />
                             </ProjectsStyles>
                         </Slide>
                 )})}
            
-                <Slide>
-                    <p id="contact">contato</p>
+                <Slide id="contact">
+                    <p >contato</p>
                     
                 </Slide>
             </FullPage>
