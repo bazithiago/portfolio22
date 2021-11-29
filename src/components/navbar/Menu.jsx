@@ -30,14 +30,15 @@ const Navbar = styled.nav`
     left: 35%;
     right: 35%;
     height: 100vh;
-    display: ${(props) => (props.clicked ? "flex" : "none")};
+    display: flex;
+    /* display: ${(props) => (props.clicked ? "flex" : "none")}; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    width: ${(props) => (props.clicked ? "auto" : "0")};
+    /* width: ${(props) => (props.clicked ? "auto" : "0")}; */
     opacity: ${(props) => (props.clicked ? "1" : "0")};
-    transition: all 0.4s;
+    transition: all 0.5s;
 
     ul {
         display: flex;
