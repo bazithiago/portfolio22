@@ -3,7 +3,6 @@ import 'balloon-css';
 
 
 const TechIconStyles = styled.div`
-    margin-right: 20px;
     cursor: default !important;
 `
 
@@ -19,7 +18,8 @@ const TechIcon = ({ alt, src, size }) => {
                 width={size}
                 height={size}
                 data-tooltip={alt}
-            />        
+            />
+
         </TechIconStyles>
     )
 }

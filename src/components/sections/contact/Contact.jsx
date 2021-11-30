@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import Database from '../../../database/index';
+import Button from '../../assets/buttons/PrimaryButton';
+import TechGroup from '../../assets/technologies/TechGroup'
 
 const FinalSlideStyles = styled.div`
     display: flex;
@@ -10,28 +13,74 @@ const FinalSlideStyles = styled.div`
 
 const ContactStyles = styled.div`
     display: flex;
+    flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
     flex: 1;
+    padding-top: 5%;
 
     h2 {
-        background-color: blue;
+        margin-bottom: 1.25rem;
+        font-size: 2.25rem;
+    }
+
+    & > a {
+        font-size: 1.6rem;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        overflow-wrap: break-word;
+        width: fit-content;
+        padding: 5px 20px 5px 20px;
+        margin-bottom: 2rem;
+
+        :hover {
+            background-color: var(--primary);
+            color: var(--secondary);
+            transition: all 0.3s ease-in-out;
+            width: fit-content;
+        }
+    }
+
+    span {
+        margin-bottom: 1.25rem;
+    }
+
+    .socialMedias {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
     }
 `
 
 const Footer = styled.footer`
-    background-color: red;
+    padding-bottom: 2%;
 `
 
 export default function Contact() {
     return(
         <FinalSlideStyles>
             <ContactStyles>
-                <h2>contato</h2>
+                <h2>me escreva</h2>
+                <a href="mailto:thiagovieira.dev@gmail.com" rel="noreferrer" target="_blank">thiagovieira.dev@gmail.com</a>
+                <span>ou me siga nas redes sociais</span>
+                <div className='socialMedias'>
+                    {Database.socialMedias.map( socialMedia => {
+                        return(
+                            <Button 
+                                key={socialMedia.name}
+                                alt={socialMedia.name}
+                                name={socialMedia.name}
+                                src={socialMedia.src} 
+                                href={socialMedia.href} 
+                                target={socialMedia.target} 
+                            />
+                        ) 
+                    })} 
+            </div>
             </ContactStyles> 
             
             <Footer>
-                lalalala
+                <TechGroup data={Database.technologies} label='site desenvolvido com'/>
             </Footer>
         </FinalSlideStyles>
     )

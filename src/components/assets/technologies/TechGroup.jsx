@@ -5,18 +5,23 @@ const TechGroupStyles = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 0.7rem;
+    align-items: center;
 
     & > div { // icons row
         display: flex;
         flex-direction: row;
         margin: 10px 0 20px 0;
+
+        & > div + div {
+            margin-left: 20px;
+        }
     }
 `
 
-const TechGroup = ({ data }) => {
+const TechGroup = ({ data, label }) => {
     return(
         <TechGroupStyles>
-            <p>build with</p>
+            {label || 'build with' }
             <div>
                 {data.map( tech => {
                     return(

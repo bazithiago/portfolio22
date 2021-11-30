@@ -4,13 +4,13 @@ const Database = {
         [
             {
                 name: 'Github',
-                src: '/logos/github.svg',
+                src: '/img/logos/github.svg',
                 href: 'https://github.com/bazithiago',
                 target: '_blank'
             },
             {
                 name: 'Linkedin',
-                src: '/logos/linkedin.svg',
+                src: '/img/logos/linkedin.svg',
                 href: 'https://www.linkedin.com/in/vieirathiago/',
                 target: '_blank'
             },
@@ -19,23 +19,19 @@ const Database = {
         [
             {
                 name: 'React',
-                src: '/logos/react.svg'
+                src: '/img/logos/react.svg'
             },
             {
                 name: 'styled-components',
-                src: '/logos/styledcomponents.svg'
-            },
-            {
-                name: 'Next.js',
-                src: '/logos/nextjs.svg'
+                src: '/img/logos/styledcomponents.svg'
             },
             {
                 name: 'Vercel',
-                src: '/logos/logo-vercel.svg'
+                src: '/img/logos/logo-vercel.svg'
             },
             {
                 name: 'Figma',
-                src: '/logos/figma.svg'
+                src: '/img/logos/figma.svg'
             },
         ]
 }
