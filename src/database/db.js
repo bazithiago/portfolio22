@@ -24,6 +24,11 @@ export const allContent = {
                 third: "I design and build interfaces for web"
             }
         },
+        contact: {
+            call: 'write me',
+            message: 'or follow me on my social medias',
+            label: 'website build with'
+        },
         projects: [
             {
                 title: 'GroundTarget / serviço de pagamentos',
@@ -174,6 +179,11 @@ export const allContent = {
                 second: "chamo Thiago",
                 third: "projeto layouts e desenvolvo interfaces para web"
             }
+        },
+        contact: {
+            call: 'escreva-me',
+            message: 'ou me siga nas redes sociais',
+            label: 'site desenvolvido com'
         },
         projects: [
             {

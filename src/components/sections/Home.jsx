@@ -41,7 +41,7 @@ const Home = () => {
                 )})}
            
                 <Slide id="contact">
-                    <Contact />
+                    <Contact content={content} />
                     
                 </Slide>
             </FullPage>

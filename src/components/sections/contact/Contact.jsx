@@ -56,13 +56,13 @@ const Footer = styled.footer`
     padding-bottom: 2%;
 `
 
-export default function Contact() {
+export default function Contact({ content }) {
     return(
         <FinalSlideStyles>
             <ContactStyles>
-                <h2>me escreva</h2>
+                <h2>{content.contact.call}</h2>
                 <a href="mailto:thiagovieira.dev@gmail.com" rel="noreferrer" target="_blank">thiagovieira.dev@gmail.com</a>
-                <span>ou me siga nas redes sociais</span>
+                <span>{content.contact.message}</span>
                 <div className='socialMedias'>
                     {Database.socialMedias.map( socialMedia => {
                         return(
@@ -80,7 +80,7 @@ export default function Contact() {
             </ContactStyles> 
             
             <Footer>
-                <TechGroup data={Database.technologies} label='site desenvolvido com'/>
+                <TechGroup data={Database.technologies} label={content.contact.label}/>
             </Footer>
         </FinalSlideStyles>
     )
