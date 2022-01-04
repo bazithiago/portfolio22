@@ -1,8 +1,4 @@
 import styled from 'styled-components'
-import ProjectsDatabase from '../../../database/projects'
-import Project from './Project'
-import { Slide } from 'react-full-page';
-
 
 export const ProjectsStyles = styled.div`
 	display: flex;
@@ -12,14 +8,5 @@ export const ProjectsStyles = styled.div`
 `;
 
 export default function Projects() {
-	return(
-		<ProjectsStyles>
-			 {ProjectsDatabase.map((project) => {
-                    return(
-                        <Slide>
-                            <Project project={project} />
-                        </Slide>
-                )})}
-		</ProjectsStyles>
-	)
+	return <ProjectsStyles />
 }

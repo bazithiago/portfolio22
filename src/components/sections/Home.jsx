@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { FullPage, Slide } from 'react-full-page'
 
 import { allContent } from '../../database/db'
-import ProjectsDatabase from '../../database/projects'
 
 import Header from '../navbar/Header'
 import Banner from '../sections/banner/Banner'
@@ -32,7 +31,7 @@ const Home = () => {
                 </Slide>
 
     
-                {ProjectsDatabase.map( project => {
+                {content.projects.map( project => {
                     return(
                         <Slide key={project.title} id="projects">
                             <ProjectsStyles>
