@@ -9,10 +9,11 @@ const HeaderStyles = styled.div`
     justify-content: space-between;
     position: fixed;
     z-index: 10;
+    padding: 0 45px;
+    backdrop-filter: blur(4px);
 
     h1 {
         font-size: 1.8rem;
-        margin-left: 45px;
         cursor: pointer;
     }
 `
