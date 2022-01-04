@@ -16,6 +16,10 @@ const TechGroupStyles = styled.div`
             margin-left: 20px;
         }
     }
+
+    @media screen and (min-width: 1024px) {
+        align-items: flex-start;
+    }
 `
 
 const TechGroup = ({ data, label }) => {

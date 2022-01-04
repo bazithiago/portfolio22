@@ -1,8 +1,9 @@
 const ProjectsDatabase = [
     {
-        title: 'project 1',
-        description: 'brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo.',
+        title: 'GroundTarget / serviço de pagamentos',
+        description: 'Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo.',
         image: '/img/photos/mockup.jpeg',
+        label: 'construído com',
         technologies: [
             {
                 name: 'React',
@@ -11,10 +12,6 @@ const ProjectsDatabase = [
             {
                 name: 'styled-components',
                 src: '/img/logos/styledcomponents.svg'
-            },
-            {
-                name: 'Next.js',
-                src: '/img/logos/nextjs.svg'
             },
             {
                 name: 'Vercel',
@@ -42,7 +39,7 @@ const ProjectsDatabase = [
     },
     {
         title: 'project 2',
-        description: 'brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo.',
+        description: 'Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. ',
         image: '/img/photos/mockup.jpeg',
         technologies: [
             {
