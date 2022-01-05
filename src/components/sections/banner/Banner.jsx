@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import imgTeste from '../../../img/photos/testeimg.png';
 import { allContent } from '../../../database/db';
-
+import BannerBackground from './BannerBackground';
 
 const BannerStyles = styled.div`
 	width: 100%;
@@ -16,7 +15,11 @@ const BannerStyles = styled.div`
 `;
 
 const TextBanner = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 100%;
+	height: 100vh;
 	padding: 20% 0 0 8%;
 	margin-bottom: -20%;
 
@@ -52,23 +55,9 @@ const TextBanner = styled.div`
 	}
 `;
 
-const BgImage = styled.div`
+const Images = styled.div`
 	width: 100%;
 
-	img {
-		width: 110%;
-		object-fit: cover;
-		margin-left: 2%;
-	}
-
-	@media screen and (min-width: 1024px) {
-		width: 60%;
-
-		img {
-			width: 100%;
-			margin-left: 0%;
-		}
-	}
 `;
 
 export default function Banner({ content }) {
@@ -79,9 +68,9 @@ export default function Banner({ content }) {
 				<p className='highlight'>{content.home.banner.second}</p>
 				<p className='normal'>{content.home.banner.third}</p>
 			</TextBanner>
-			<BgImage>
-				<img src={imgTeste} alt='teste' />
-			</BgImage>
+			<Images>
+				<BannerBackground />
+			</Images>
 		</BannerStyles>
 	);
 }
