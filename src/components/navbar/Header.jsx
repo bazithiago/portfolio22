@@ -9,12 +9,16 @@ const HeaderStyles = styled.div`
     justify-content: space-between;
     position: fixed;
     z-index: 10;
-    padding: 0 45px;
     backdrop-filter: blur(4px);
+    padding: 0 35px;
 
     h1 {
         font-size: 1.8rem;
         cursor: pointer;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 0 45px;
     }
 `
 

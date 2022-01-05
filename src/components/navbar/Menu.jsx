@@ -6,7 +6,7 @@ import { ReactComponent as MenuIcon } from '../../img/icons/menu.svg'
 
 const MenuIconStyle = styled.div`
     position: absolute;
-    right: 50px;
+    right: 45px;
     cursor: pointer;
     z-index: 10;
     transform: scale(1.5);
@@ -15,7 +15,7 @@ const MenuIconStyle = styled.div`
 const NavBackground = styled.div`
     position: absolute;
     top: 50px;
-    right: 50px;
+    right: 45px;
     background-color: #000;
     transform: ${(props) => (props.clicked ? "scale(500)" : "scale(0)")};
     transition: transform 0.8s ease-in-out;

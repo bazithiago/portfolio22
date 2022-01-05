@@ -18,7 +18,7 @@ const ContactStyles = styled.div`
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding-top: 5%;
+    padding: 5% 10% 0 10%;
 
     h2 {
         margin-bottom: 1.25rem;
@@ -87,7 +87,7 @@ export default function Contact({ content }) {
                 </Footer>
                 
             </FinalSlideStyles>
-            
+
             <ContactBackground />
         </>
     )

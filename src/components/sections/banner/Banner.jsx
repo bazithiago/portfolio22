@@ -17,7 +17,7 @@ const BannerStyles = styled.div`
 
 const TextBanner = styled.div`
 	width: 100%;
-	padding: 20% 0 0 10%;
+	padding: 20% 0 0 8%;
 	margin-bottom: -20%;
 
 	p {

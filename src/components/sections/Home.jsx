@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import ReactFullpage from '@fullpage/react-fullpage';
-
 import { allContent } from '../../database/db'
-
 import Header from '../navbar/Header'
 import Banner from './banner/Banner'
 import Project from './projects/Project'
