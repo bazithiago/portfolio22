@@ -18,7 +18,7 @@ const ContactStyles = styled.div`
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 5% 10% 0 10%;
+    padding: 5% 10%;
 
     h2 {
         margin-bottom: 1.25rem;
