@@ -25,7 +25,7 @@ const Home = () => {
 	return (
         <>
             <Header handleLanguage={handleLanguage} content={content} />
-            <FullPage duration={700} >
+            <FullPage duration={400} >
                 <Slide id="about">
                     <Banner content={content} />
                 </Slide>

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Database from '../../../database/index';
 import Button from '../../assets/buttons/PrimaryButton';
 import TechGroup from '../../assets/technologies/TechGroup'
+import ContactBackground from './ContactBackground';
 
 const FinalSlideStyles = styled.div`
     display: flex;
@@ -58,30 +59,36 @@ const Footer = styled.footer`
 
 export default function Contact({ content }) {
     return(
-        <FinalSlideStyles>
-            <ContactStyles>
-                <h2>{content.contact.call}</h2>
-                <a href="mailto:thiagovieira.dev@gmail.com" rel="noreferrer" target="_blank">thiagovieira.dev@gmail.com</a>
-                <span>{content.contact.message}</span>
-                <div className='socialMedias'>
-                    {Database.socialMedias.map( socialMedia => {
-                        return(
-                            <Button 
+        <>
+        
+            <FinalSlideStyles>
+                <ContactStyles>
+                    <h2>{content.contact.call}</h2>
+                    <a href="mailto:thiagovieira.dev@gmail.com" rel="noreferrer" target="_blank">thiagovieira.dev@gmail.com</a>
+                    <span>{content.contact.message}</span>
+                    <div className='socialMedias'>
+                        {Database.socialMedias.map( socialMedia => {
+                            return(
+                                <Button 
                                 key={socialMedia.name}
                                 alt={socialMedia.name}
                                 name={socialMedia.name}
                                 src={socialMedia.src} 
                                 href={socialMedia.href} 
                                 target={socialMedia.target} 
-                            />
-                        ) 
-                    })} 
-            </div>
-            </ContactStyles> 
+                                />
+                                ) 
+                            })} 
+                </div>
+                </ContactStyles> 
+                
+                <Footer>
+                    <TechGroup data={Database.technologies} label={content.contact.label}/>
+                </Footer>
+                
+            </FinalSlideStyles>
             
-            <Footer>
-                <TechGroup data={Database.technologies} label={content.contact.label}/>
-            </Footer>
-        </FinalSlideStyles>
+            <ContactBackground />
+        </>
     )
 }
