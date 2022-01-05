@@ -1,16 +1,16 @@
 import { useState } from 'react'
-import { FullPage, Slide } from 'react-full-page'
+import ReactFullpage from '@fullpage/react-fullpage';
 
 import { allContent } from '../../database/db'
 
 import Header from '../navbar/Header'
-import Banner from '../sections/banner/Banner'
-import Project from '../sections/projects/Project'
-import { ProjectsStyles } from '../sections/projects/Projects'
+import Banner from './banner/Banner'
+import Project from './projects/Project'
+import { ProjectsStyles } from './projects/Projects'
 import Contact from './contact/Contact'
 
 const Home = () => {
-	const [content, setContent] = useState(allContent.ptbr);
+  const [content, setContent] = useState(allContent.ptbr);
 
 	function handleLanguage(e) {
 		const language = e.target.dataset.lang;
@@ -23,31 +23,41 @@ const Home = () => {
 	}
 
 	return (
-        <>
-            <Header handleLanguage={handleLanguage} content={content} />
-            <FullPage duration={400} >
-                <Slide id="about">
-                    <Banner content={content} />
-                </Slide>
+    <>
+      <Header handleLanguage={handleLanguage} content={content} />
 
+      <ReactFullpage
+      scrollingSpeed = {700} 
+  
+      render={({ state, fullpageApi }) => {
+        return (
+          <ReactFullpage.Wrapper>
+            <div className='section' id='about'>
+              <Banner content={content} />
+            </div>
+
+            {content.projects.map( project => {
+              return(
+                <div key={project.title} className='section' id='projects'>
+                    <ProjectsStyles>
+                      <Project project={project} />
+                    </ProjectsStyles>
+                </div>
+            )})}
+
+            <div className='section' id='contact'>
+              <Contact content={content} />
+            </div>
+              
+          </ReactFullpage.Wrapper>
+        );
+      }}
+      />
+
+
+    </>
     
-                {content.projects.map( project => {
-                    return(
-                        <Slide key={project.title} id="projects">
-                            <ProjectsStyles>
-                                <Project project={project} />
-                            </ProjectsStyles>
-                        </Slide>
-                )})}
-           
-                <Slide id="contact">
-                    <Contact content={content} />
-                    
-                </Slide>
-            </FullPage>
-
-        </>
-	);
-};
+  );
+}
 
 export default Home;
