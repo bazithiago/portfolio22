@@ -18,13 +18,13 @@ const TechGroupStyles = styled.div`
     }
 
     @media screen and (min-width: 1024px) {
-        align-items: flex-start;
+        align-items: ${(props) => (props.center ? 'center' : 'flex-start')};
     }
 `
 
-const TechGroup = ({ data, label }) => {
+const TechGroup = ({ data, label, center }) => {
     return(
-        <TechGroupStyles>
+        <TechGroupStyles center={center}>
             {label || 'build with' }
             <div>
                 {data.map( tech => {

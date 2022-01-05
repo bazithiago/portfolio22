@@ -83,7 +83,7 @@ export default function Contact({ content }) {
                 </ContactStyles> 
                 
                 <Footer>
-                    <TechGroup data={Database.technologies} label={content.contact.label}/>
+                    <TechGroup center={true} data={Database.technologies} label={content.contact.label}/>
                 </Footer>
                 
             </FinalSlideStyles>
