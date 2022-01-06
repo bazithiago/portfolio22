@@ -15,7 +15,7 @@ const ContactBackgroundStyles = styled.div`
     transition: all 0.2s;
 
     #circle1 {
-        display: block;
+        display: none;
 
         @media screen and (min-width: 1024px) {
             display: block;
@@ -28,7 +28,7 @@ const ContactBackgroundStyles = styled.div`
     }
 
     #circle2 {
-        display: block;
+        display: none;
 
         @media screen and (min-width: 1024px) {
             display: block;
@@ -41,7 +41,7 @@ const ContactBackgroundStyles = styled.div`
     }
 
     #waves1 {
-        display: block;
+        display: none;
 
         @media screen and (min-width: 1024px) {
             display: block;
@@ -54,7 +54,7 @@ const ContactBackgroundStyles = styled.div`
     }
 
     #dotsGrid {
-        display: block;
+        display: none;
 
         @media screen and (min-width: 1024px) {
             display: block;

@@ -13,21 +13,30 @@ const BannerBackgroundStyles = styled.div`
     #photo {
         position: absolute;
         z-index: 4;
+        width: 80vw;
+        bottom: 15vw;
+        right: -8vw;
 
         @media screen and (min-width: 1024px) {
             width: 45vw;
             right: 7vw;
             top: 11vw;
+            bottom: auto;
         }
     }
 
     #dotsGrid {
         position: absolute;
         z-index: 3;
+        width: 40vw;
+        left: 14vw;
+        bottom: 10vw;
 
         @media screen and (min-width: 1024px) {
+            width: 285px;
             right: 37vw;
             top: 20vw;
+            left: auto;
         }
     }
 
@@ -35,23 +44,32 @@ const BannerBackgroundStyles = styled.div`
         position: absolute;
         z-index: 2;
         transform: rotate(90deg);
-
+        width: 24vw;
+        left: 24vw;
+        bottom: 50vw;
         
         @media screen and (min-width: 1024px) {
             right: 7.5vw;
             top: 12.5vw;
+            width: 160px;
+            left: auto;
+            bottom: auto;
         }
     }
 
     #wavesGrid {
         position: absolute;
         z-index: 1;
-        right: -102vw;
-        bottom: -40vw;
+        left: 20vw;
+        bottom: -25vw;
+        width: 125vw;
 
         @media screen and (min-width: 1024px) {
             right: -16vw;
             top: 11vw;
+            width: 850px;
+            bottom: auto;
+            left: auto;
         }
     }
 `
@@ -61,9 +79,9 @@ export default function BannerBackground() {
     return(
         <BannerBackgroundStyles>
             <img src={imgSRC.photo} alt='Thiago avatar' id='photo' />
-            <img src={imgSRC.dotsGrid} alt='dotsGrid' id='dotsGrid' width={285}/>
-            <img src={imgSRC.crosses} alt='crosses' id='crosses' width={160}/>
-            <img src={imgSRC.wavesGrid} alt='wavesGrid' id='wavesGrid' width={850}/>
+            <img src={imgSRC.dotsGrid} alt='dotsGrid' id='dotsGrid'/>
+            <img src={imgSRC.crosses} alt='crosses' id='crosses' />
+            <img src={imgSRC.wavesGrid} alt='wavesGrid' id='wavesGrid' />
         </BannerBackgroundStyles>
     )
 }

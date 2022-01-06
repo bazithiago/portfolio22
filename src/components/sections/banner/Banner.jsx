@@ -3,25 +3,24 @@ import { allContent } from '../../../database/db';
 import BannerBackground from './BannerBackground';
 
 const BannerStyles = styled.div`
-	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-
+	
 	@media screen and (min-width: 1024px) {
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		justify-content: space-between;
 	}
 `;
 
 const TextBanner = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	width: 100%;
 	height: 100vh;
-	padding: 20% 0 0 8%;
-	margin-bottom: -20%;
+	padding: 25vh 0 0 8%;
 
 	p {
 		font-size: 2.5rem;
@@ -42,6 +41,7 @@ const TextBanner = styled.div`
 		width: 40%;
 		padding: 2% 0 0 10%;
 		margin-bottom: 0;
+		justify-content: center;
 
 		p {
 			font-size: 3rem;
@@ -57,7 +57,6 @@ const TextBanner = styled.div`
 
 const Images = styled.div`
 	width: 100%;
-
 `;
 
 export default function Banner({ content }) {
