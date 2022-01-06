@@ -25,8 +25,8 @@ const Home = () => {
       <Header handleLanguage={handleLanguage} content={content} />
 
       <ReactFullpage
-      scrollingSpeed = {700} 
-  
+      scrollingSpeed = {700}
+      
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>

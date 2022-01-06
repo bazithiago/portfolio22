@@ -1318,7 +1318,7 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fullpage/react-fullpage@^0.1.19":
+"@fullpage/react-fullpage@^0.1.17":
   version "0.1.19"
   resolved "https://registry.yarnpkg.com/@fullpage/react-fullpage/-/react-fullpage-0.1.19.tgz#770ecfc96475900007ce1c29376da7fa11fb26a8"
   integrity sha512-URgt+91lw/Ac4R+VXqquY97w2U+QaQhHIcO7V+HHesPHYA8kCfjMb3VZ+n7RFz05FdpIx3gLV9TZHOYS9p43Kg==
@@ -3686,11 +3686,6 @@ core-js@^2.4.0, core-js@^2.6.5:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
-
-core-js@^3.16.2:
-  version "3.19.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.2.tgz#ae216d7f4f7e924d9a2e3ff1e4b1940220f9157b"
-  integrity sha512-ciYCResnLIATSsXuXnIOH4CbdfgV+H1Ltg16hJFN7/v6OxqnFr/IFGeLacaZ+fHLAm0TBbXwNK9/DNBzBUrO/g==
 
 core-js@^3.6.5:
   version "3.9.0"
@@ -9227,13 +9222,6 @@ react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
-
-react-full-page@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/react-full-page/-/react-full-page-0.1.12.tgz#59dc3a0e86e56d5783b63c6a48a8d195a347dc78"
-  integrity sha512-Bk6gcxANuWNkeBNmaTUNRcA05zDBqJaTKxlr78dC59gsXhiWPODa8kcrDHClaRAc6JkH16jzbCOO1mNH9Ta1jQ==
-  dependencies:
-    core-js "^3.16.2"
 
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"

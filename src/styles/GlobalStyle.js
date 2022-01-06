@@ -22,7 +22,6 @@ const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
         -webkit-font-smoothing: antialiased;
         display: flex;
-       
         
         &::-webkit-scrollbar {
             display: none;
@@ -41,6 +40,10 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
+    .section {
+        height: 100vh !important;
+        height: calc(var(--vh, 1vh) * 100) !important;
+    }
 `;
  
 export default GlobalStyle;
