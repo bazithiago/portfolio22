@@ -8,7 +8,7 @@ const BannerStyles = styled.div`
 	
 	@media screen and (min-width: 1024px) {
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		align-items: center;
 		justify-content: space-between;
 	}
@@ -20,7 +20,7 @@ const TextBanner = styled.div`
 	justify-content: flex-start;
 	width: 100%;
 	height: 100vh;
-	padding: 25vh 0 0 8%;
+	padding: 20vh 0 0 8%;
 
 	p {
 		font-size: 2.5rem;

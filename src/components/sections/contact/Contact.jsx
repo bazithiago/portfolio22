@@ -2,15 +2,15 @@ import styled from 'styled-components';
 import Database from '../../../database/index';
 import Button from '../../assets/buttons/PrimaryButton';
 import TechGroup from '../../assets/technologies/TechGroup'
-import ContactBackground from './ContactBackground';
+// import ContactBackground from './ContactBackground';
 
 const FinalSlideStyles = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
-`
+    height: 100vh;
+    `
 
 const ContactStyles = styled.div`
     display: flex;
@@ -18,7 +18,7 @@ const ContactStyles = styled.div`
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 25% 10% 0 10%;
+    padding: 0 10%;
 
     h2 {
         margin-bottom: 1.25rem;
@@ -66,7 +66,7 @@ export default function Contact({ content }) {
         <>
         
             <FinalSlideStyles>
-                <ContactStyles>
+                <ContactStyles id='contact'>
                     <h2>{content.contact.call}</h2>
                     <a href="mailto:thiagovieira.dev@gmail.com" rel="noreferrer" target="_blank">thiagovieira.dev@gmail.com</a>
                     <span>{content.contact.message}</span>
@@ -92,7 +92,7 @@ export default function Contact({ content }) {
                 
             </FinalSlideStyles>
 
-            <ContactBackground />
+            {/* <ContactBackground /> */}
         </>
     )
 }

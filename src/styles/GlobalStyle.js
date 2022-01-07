@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
             display: none;
         }
         -ms-overflow-style: none; 
-        scrollbar-width: none;  
+        scrollbar-width: none;
 
     }
 

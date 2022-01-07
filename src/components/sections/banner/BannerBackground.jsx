@@ -13,13 +13,13 @@ const BannerBackgroundStyles = styled.div`
     #photo {
         position: absolute;
         z-index: 4;
-        width: 80vw;
-        bottom: 15vw;
-        right: -8vw;
+        width: 55vw;
+        bottom: 10vw;
+        right: 8vw;
 
         @media screen and (min-width: 1024px) {
-            width: 45vw;
-            right: 7vw;
+            width: 30vw;
+            right: 16vw;
             top: 11vw;
             bottom: auto;
         }
@@ -81,7 +81,7 @@ export default function BannerBackground() {
             <img src={imgSRC.photo} alt='Thiago avatar' id='photo' />
             <img src={imgSRC.dotsGrid} alt='dotsGrid' id='dotsGrid'/>
             <img src={imgSRC.crosses} alt='crosses' id='crosses' />
-            <img src={imgSRC.wavesGrid} alt='wavesGrid' id='wavesGrid' />
+            {/* <img src={imgSRC.wavesGrid} alt='wavesGrid' id='wavesGrid' /> */}
         </BannerBackgroundStyles>
     )
 }

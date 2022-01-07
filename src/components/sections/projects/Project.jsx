@@ -7,6 +7,7 @@ const ProjectStyles = styled.div`
     max-width: 500px;
     flex-direction: column;
     padding: 0 45px;
+    height: 100vh;
     
     .content {
         height: 55vh;

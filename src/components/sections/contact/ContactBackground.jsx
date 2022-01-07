@@ -12,17 +12,26 @@ const imgSRC = {
 }
 
 const ContactBackgroundStyles = styled.div`
+    display: flex;
+    justify-content: space-between;
     transition: all 0.2s;
+    position: relative;
+    z-index: 1;
+    bottom: 100vh;
+    margin-bottom: -100%;
+
+    & > div {
+        width: 50%;
+        border: 1px solid red;
+    }
 
     #circle1 {
         display: none;
 
         @media screen and (min-width: 1024px) {
             display: block;
-            position: absolute;
-            z-index: -6;
-            left: 20vw;
-            bottom: 4vw;
+            position: relative;
+            z-index: 4;
             opacity: 1;
         }
     }
@@ -32,10 +41,8 @@ const ContactBackgroundStyles = styled.div`
 
         @media screen and (min-width: 1024px) {
             display: block;
-            position: absolute;
-            z-index: -7;
-            left: 4vw;
-            bottom: 12vw;
+            position: relative;
+            z-index: 3;
             opacity: 1;
         }
     }
@@ -45,10 +52,8 @@ const ContactBackgroundStyles = styled.div`
 
         @media screen and (min-width: 1024px) {
             display: block;
-            position: absolute;
-            z-index: -8;
-            left: 5vw;
-            bottom: -2vw;
+            position: relative;
+            z-index: 2;
             opacity: 1;
         }
     }
@@ -58,10 +63,8 @@ const ContactBackgroundStyles = styled.div`
 
         @media screen and (min-width: 1024px) {
             display: block;
-            position: absolute;
-            z-index: -9;
-            left: 3vw;
-            bottom: -1vw;
+            position: relative;
+            z-index: 1;
             opacity: 1;
         }
     }
@@ -71,11 +74,12 @@ const ContactBackgroundStyles = styled.div`
 
         @media screen and (min-width: 1024px) {
             display: block;
-            position: absolute;
-            z-index: -6;
-            right: 3vw;
-            bottom: 2vw;
+            position: relative;
+            z-index: 4;
             opacity: 1;
+            float: right;
+            right: 20vw;
+            bottom: 0;
         }
     }
 
@@ -84,11 +88,10 @@ const ContactBackgroundStyles = styled.div`
 
         @media screen and (min-width: 1024px) {
             display: block;
-            position: absolute;
-            z-index: -7;
-            right: 16vw;
-            bottom: 12vw;
+            position: relative;
+            z-index: 3;
             opacity: 1;
+            float: right;
         }
     }
 
@@ -97,29 +100,24 @@ const ContactBackgroundStyles = styled.div`
 
         @media screen and (min-width: 1024px) {
             display: block;
-            position: absolute;
-            z-index: -8;
-            right: 2vw;
-            bottom: 4vw;
+            position: relative;
+            z-index: 2;
             opacity: 1;
+            float: right;
         }
     }
 
 
     #wavesGrid {
-        position: absolute;
-        z-index: -9;
-        right: -102vw;
-        bottom: -40vw;
+        position: relative;
+        z-index: 1;
         opacity: 0.65;
         transform: rotate(-15deg);
 
         @media screen and (min-width: 1024px) {
-            right: -22vw;
-            bottom: -7vw;
             opacity: 0.85;
             transform: rotate(0deg);
-
+            float: right;
         }
     }
 `
@@ -128,14 +126,18 @@ export default function ContactBackground() {
     
     return(
         <ContactBackgroundStyles>
-            <img src={imgSRC.circle1} alt='circle1' id='circle1' width={35}/>
-            <img src={imgSRC.circle2} alt='circle2' id='circle2' width={65}/>
-            <img src={imgSRC.waves1} alt='waves1' id='waves1' width={400}/>
-            <img src={imgSRC.dotsGrid} alt='dotsGrid' id='dotsGrid' width={200}/>
-            <img src={imgSRC.crosses} alt='crosses' id='crosses' width={160}/>
-            <img src={imgSRC.circle3} alt='circle3' id='circle3' width={150}/>
-            <img src={imgSRC.waves2} alt='waves2' id='waves2' width={450}/>
-            <img src={imgSRC.wavesGrid} alt='wavesGrid' id='wavesGrid' width={870}/>
+            <div className="group1">
+                <img src={imgSRC.circle1} alt='circle1' id='circle1' width={35}/>
+                <img src={imgSRC.circle2} alt='circle2' id='circle2' width={65}/>
+                <img src={imgSRC.waves1} alt='waves1' id='waves1' width={400}/>
+                <img src={imgSRC.dotsGrid} alt='dotsGrid' id='dotsGrid' width={200}/>
+            </div>
+            <div className="group2">
+                <img src={imgSRC.crosses} alt='crosses' id='crosses' width={160}/>
+                <img src={imgSRC.circle3} alt='circle3' id='circle3' width={150}/>
+                <img src={imgSRC.waves2} alt='waves2' id='waves2' width={450}/>
+                <img src={imgSRC.wavesGrid} alt='wavesGrid' id='wavesGrid' width={870}/>
+            </div>
         </ContactBackgroundStyles>
     )
 }
