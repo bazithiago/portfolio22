@@ -2,11 +2,16 @@ import styled from 'styled-components'
 
 export const ProjectsStyles = styled.div`
 	display: flex;
+	flex-direction: column;
 	justify-content:center;
 	align-items:center;
 	height: 100%;
 `;
 
 export default function Projects() {
-	return <ProjectsStyles />
+	return (
+		<>
+			<ProjectsStyles />
+		</>
+	)	
 }

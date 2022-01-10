@@ -128,11 +128,11 @@ function Menu({ handleLanguage, content }) {
                             )
                         })}
                 </ul>
-                <div className="languages">
+                {/* <div className="languages">
                     <p className="languages"><strong>{content.menu.language}</strong></p>
                     <p onClick={handleLanguage} data-lang='ptbr'>português</p>
                     <p onClick={handleLanguage} data-lang='en'>english</p>
-                </div>
+                </div> */}
             </Navbar>
         </>
     )
