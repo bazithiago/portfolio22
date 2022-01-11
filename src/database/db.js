@@ -141,13 +141,13 @@ export const allContent = {
                     {
                         name: 'Github',
                         src: '/img/logos/github.svg',
-                        href: '',
+                        href: 'https://github.com/bazithiago/payment-service',
                         target: '_blank'
                     },
                     {
                         name: 'View live',
                         src: '/img/logos/live.svg',
-                        href: '',
+                        href: 'https://payment-service-kappa.vercel.app/',
                         target: '_blank'
                     }
                 ],
@@ -190,7 +190,7 @@ export const allContent = {
                 title: 'GroundTarget / serviço de pagamentos',
                 description: 'É um serviço de gerenciamento de demandas e pagamentos de fornecedores. Trabalho realizado: desenvolvimento de layout; componentização de elementos; adição e exclusão de cards; atualização de status; exibição de notificações.',
                 image: '/img/photos/mockup.jpeg',
-                label: 'construído com',
+                label: 'desenvolvido com',
                 technologies: [
                     {
                         name: 'React',
@@ -217,13 +217,13 @@ export const allContent = {
                     {
                         name: 'Github',
                         src: '/img/logos/github.svg',
-                        href: '',
+                        href: 'https://github.com/bazithiago/payment-service',
                         target: '_blank'
                     },
                     {
                         name: 'View live',
                         src: '/img/logos/live.svg',
-                        href: '',
+                        href: 'https://payment-service-kappa.vercel.app/',
                         target: '_blank'
                     }
                 ],
@@ -232,7 +232,7 @@ export const allContent = {
                 title: 'MyCanvaz',
                 description: 'É um protótipo para criação em larga escala de campanhas de marketing. Com as informações básicas inseridas, o serviço disponibiliza para download as artes em diferentes formatos. Trabalho realizado: desenvolvimento de layout, componentização de elementos, apresentação e testes de prototipagem.',
                 image: '/img/photos/mockup.jpeg',
-                label: 'construído com',
+                label: 'desenvolvido com',
                 technologies: [
                     {
                         name: 'React',
@@ -255,13 +255,13 @@ export const allContent = {
                     {
                         name: 'Github',
                         src: '/img/logos/github.svg',
-                        href: '',
+                        href: 'https://github.com/bazithiago/mycanvaz',
                         target: '_blank'
                     },
                     {
                         name: 'View live',
                         src: '/img/logos/live.svg',
-                        href: '',
+                        href: 'https://mycanvaz.vercel.app/',
                         target: '_blank'
                     }
                 ],
@@ -270,7 +270,7 @@ export const allContent = {
                 title: 'Piwi / design system',
                 description: 'App Piwi é um sistema de gerenciamento de planos de saúde voltado para corretoras e seus beneficiários. Trabalho realizado: desenvolvimento de design system, criação de styleguide com componentização de objetos em ReactJS, documentação e utilização no Storybok.',
                 image: '/img/photos/mockup.jpeg',
-                label: 'construído com',
+                label: 'desenvolvido com',
                 technologies: [
                     {
                         name: 'React',
