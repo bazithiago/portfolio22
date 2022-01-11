@@ -188,45 +188,7 @@ export const allContent = {
         projects: [
             {
                 title: 'GroundTarget / serviço de pagamentos',
-                description: 'Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo.',
-                image: '/img/photos/mockup.jpeg',
-                label: 'construído com',
-                technologies: [
-                    {
-                        name: 'React',
-                        src: '/img/logos/react.svg'
-                    },
-                    {
-                        name: 'styled-components',
-                        src: '/img/logos/styledcomponents.svg'
-                    },
-                    {
-                        name: 'Vercel',
-                        src: '/img/logos/logo-vercel.svg'
-                    },
-                    {
-                        name: 'Figma',
-                        src: '/img/logos/figma.svg'
-                    },
-                ],
-                links: [
-                    {
-                        name: 'Github',
-                        src: '/img/logos/github.svg',
-                        href: '',
-                        target: '_blank'
-                    },
-                    {
-                        name: 'View live',
-                        src: '/img/logos/live.svg',
-                        href: '',
-                        target: '_blank'
-                    }
-                ],
-            },
-            {
-                title: 'project 2',
-                description: 'Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. ',
+                description: 'É um serviço de gerenciamento de demandas e pagamentos de fornecedores. Trabalho realizado: desenvolvimento de layout; componentização de elementos; adição e exclusão de cards; atualização de status; exibição de notificações.',
                 image: '/img/photos/mockup.jpeg',
                 label: 'construído com',
                 technologies: [
@@ -267,8 +229,8 @@ export const allContent = {
                 ],
             },
             {
-                title: 'project 3',
-                description: 'brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo.',
+                title: 'MyCanvaz',
+                description: 'É um protótipo para criação em larga escala de campanhas de marketing. Com as informações básicas inseridas, o serviço disponibiliza para download as artes em diferentes formatos. Trabalho realizado: desenvolvimento de layout, componentização de elementos, apresentação e testes de prototipagem.',
                 image: '/img/photos/mockup.jpeg',
                 label: 'construído com',
                 technologies: [
@@ -281,16 +243,54 @@ export const allContent = {
                         src: '/img/logos/styledcomponents.svg'
                     },
                     {
-                        name: 'Next.js',
-                        src: '/img/logos/nextjs.svg'
-                    },
-                    {
                         name: 'Vercel',
                         src: '/img/logos/logo-vercel.svg'
                     },
                     {
                         name: 'Figma',
                         src: '/img/logos/figma.svg'
+                    },
+                ],
+                links: [
+                    {
+                        name: 'Github',
+                        src: '/img/logos/github.svg',
+                        href: '',
+                        target: '_blank'
+                    },
+                    {
+                        name: 'View live',
+                        src: '/img/logos/live.svg',
+                        href: '',
+                        target: '_blank'
+                    }
+                ],
+            },
+            {
+                title: 'Piwi / design system',
+                description: 'App Piwi é um sistema de gerenciamento de planos de saúde voltado para corretoras e seus beneficiários. Trabalho realizado: desenvolvimento de design system, criação de styleguide com componentização de objetos em ReactJS, documentação e utilização no Storybok.',
+                image: '/img/photos/mockup.jpeg',
+                label: 'construído com',
+                technologies: [
+                    {
+                        name: 'React',
+                        src: '/img/logos/react.svg'
+                    },
+                    {
+                        name: 'styled-components',
+                        src: '/img/logos/styledcomponents.svg'
+                    },
+                    {
+                        name: 'Storybook',
+                        src: '/img/logos/storybook.svg'
+                    },
+                    {
+                        name: 'Vercel',
+                        src: '/img/logos/logo-vercel.svg'
+                    },
+                    {
+                        name: 'Adobe XD',
+                        src: '/img/logos/adobeXD.svg'
                     },
                 ],
                 links: [

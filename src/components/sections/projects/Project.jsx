@@ -24,9 +24,9 @@ const ProjectStyles = styled.div`
                 margin-bottom: 1rem;
             }
 
-            h3 {
+            p.description {
                 font-weight: 400;
-                font-size: 0.85rem;
+                font-size: 0.95rem;
                 text-align: center;
             }
         }
@@ -91,8 +91,9 @@ const ProjectStyles = styled.div`
                     text-align: left;
                 }
 
-                h3 {
+                p.description {
                     text-align: left;
+                    font-size: 1rem;
                 }
             }
 
@@ -116,9 +117,9 @@ const ProjectStyles = styled.div`
         }
     }
 
-    @media screen and (min-width: 1600px) {
+    /* @media screen and (min-width: 1600px) {
         width: 80vw;
-    }
+    } */
     
 `
 
@@ -135,7 +136,7 @@ const Project = ({ project }) => {
             <div className="content">
                 <div className="title">
                     <h1>{project.title}</h1>
-                    <h3>{project.description}</h3>
+                    <p className='description'>{project.description}</p>
                 </div>
                 <div className="technologies">
                     <TechGroup data={project.technologies} label={project.label}/>
