@@ -80,6 +80,12 @@ const AboutStyles = styled.div`
             margin-bottom: 1.25rem;
         }
     }
+    
+    section.tabs {
+        h2 {
+            margin-top: 2rem;
+        }
+    }
 
     h2 {
         margin-bottom: 1.25rem;
@@ -106,6 +112,10 @@ const AboutStyles = styled.div`
 
         section.tabs {
             padding: 0 0 0 3rem;
+
+            h2 {
+                margin-top: 0;
+            }
         }
 
         section.bioContent {

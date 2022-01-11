@@ -10,11 +10,12 @@ const ProjectStyles = styled.div`
     height: 100vh;
     
     .content {
-        height: 55vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         padding-bottom: 4vh;
+        /* border: 1px solid blue; */
 
         .title {
             h1 {
@@ -52,6 +53,7 @@ const ProjectStyles = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
+        /* border: 1px solid red; */
 
         img {
             width: 100%;
