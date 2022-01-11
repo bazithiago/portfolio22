@@ -81,7 +81,7 @@ export default function BannerBackground() {
             <img src={imgSRC.photo} alt='Thiago avatar' id='photo' />
             <img src={imgSRC.dotsGrid} alt='dotsGrid' id='dotsGrid'/>
             <img src={imgSRC.crosses} alt='crosses' id='crosses' />
-            {/* <img src={imgSRC.wavesGrid} alt='wavesGrid' id='wavesGrid' /> */}
+            <img src={imgSRC.wavesGrid} alt='wavesGrid' id='wavesGrid' />
         </BannerBackgroundStyles>
     )
 }

@@ -7,8 +7,8 @@ const AboutStyles = styled.div`
     width: 100vw;
     min-height: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     padding: 13vh 45px;
 
     section {
@@ -115,6 +115,10 @@ const AboutStyles = styled.div`
 
     }
 
+    @media screen and (min-width: 1600px) {
+        padding: 13vw 13vw 0;
+    }
+
 `
 
 
@@ -144,7 +148,7 @@ export default function About() {
                 <p>Sou Thiago, desenvolvedor front-end web, com formação em UX e design gráfico e moro na cidade de São Paulo.</p>
                 <p>Meu interesse por código e programação iniciou ainda na graduação, desenvolvendo projetos de interface para web e aplicativos mobile. Continuei minha formação ainda no âmbito do design, com uma especialização em user experience, mas um desejo ainda permanecia: trabalhar diretamente com código. Desejo esse que me fez procurar formação complementar e capacitação prática para migrar de área e atuar como um desenvolvedor front-end.</p>
                 <p><strong>Tecnologias que trabalho no momento</strong>:<br/>Javascript (Vanilla/ES6), React JS, SaSS/ CSS in JS (Styled-components), Webpack, NodeJS, Git e github, Storybook.</p>
-                <p><strong>O que estou estudando</strong>:<br/>Typescript, Next.js, GraphQL, Jest</p>
+                <p><strong>O que estou estudando</strong>:<br/>Typescript, Redux, Next.js, GraphQL, Jest</p>
             </section>
             <section className='tabs'>
             <h2>{`estudos & experiências`}</h2>

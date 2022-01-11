@@ -115,6 +115,10 @@ const ProjectStyles = styled.div`
             align-items: center;
         }
     }
+
+    @media screen and (min-width: 1600px) {
+        width: 80vw;
+    }
     
 `
 

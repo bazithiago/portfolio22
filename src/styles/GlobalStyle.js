@@ -22,13 +22,14 @@ const GlobalStyle = createGlobalStyle`
         scroll-behavior: smooth;
         -webkit-font-smoothing: antialiased;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         
         &::-webkit-scrollbar {
             display: none;
         }
         -ms-overflow-style: none; 
         scrollbar-width: none;
-
     }
 
     a {
