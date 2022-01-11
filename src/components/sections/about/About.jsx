@@ -94,6 +94,7 @@ const AboutStyles = styled.div`
     
     @media screen and (min-width: 1024px) {
         flex-direction: row;
+        height: 60vh;
 
         section {
             width: 50%;
@@ -161,7 +162,7 @@ export default function About() {
                 <p><strong>O que estou estudando</strong>:<br/>Typescript, Redux, Next.js, GraphQL, Jest</p>
             </section>
             <section className='tabs'>
-            <h2>{`estudos & experiências`}</h2>
+            <h2>{`estudos & trabalhos`}</h2>
                 <div className="controls">
                     <button onClick={() => scroll(-100)} className='buttonControls'> 
                         <img src="/img/icons/chevron-left.svg" alt="left" width='auto'/>

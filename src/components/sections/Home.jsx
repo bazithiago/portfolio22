@@ -34,17 +34,17 @@ const Home = () => {
     <HomeStyles>
       <Header handleLanguage={handleLanguage} content={content} />
       <Banner content={content} />
-      <About content={content} />
 
       {content.projects.map( project => {
-              return(
-                <div key={project.title} id='projects'>
+        return(
+          <div key={project.title} id='projects'>
                     <ProjectsStyles>
                       <Project project={project} />
                     </ProjectsStyles>
                 </div>
       )})}
 
+      <About content={content} />
       <Contact content={content}  />
 
     </HomeStyles>

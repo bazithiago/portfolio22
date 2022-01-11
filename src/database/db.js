@@ -33,7 +33,7 @@ export const allContent = {
             {
                 title: 'GroundTarget / serviço de pagamentos',
                 description: 'Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo. brief description lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et metus justo.',
-                image: '/img/photos/mockup.jpeg',
+                image: '/img/photos/projects/payment.png',
                 label: 'build with',
                 technologies: [
                     {
@@ -189,7 +189,7 @@ export const allContent = {
             {
                 title: 'GroundTarget / serviço de pagamentos',
                 description: 'É um serviço de gerenciamento de demandas e pagamentos de fornecedores. Trabalho realizado: desenvolvimento de layout; componentização de elementos; adição e exclusão de cards; atualização de status; exibição de notificações.',
-                image: '/img/photos/mockup.jpeg',
+                image: '/img/photos/projects/payment.png',
                 label: 'desenvolvido com',
                 technologies: [
                     {
@@ -231,7 +231,7 @@ export const allContent = {
             {
                 title: 'MyCanvaz',
                 description: 'É um protótipo para criação em larga escala de campanhas de marketing. Com as informações básicas inseridas, o serviço disponibiliza para download as artes em diferentes formatos. Trabalho realizado: desenvolvimento de layout, componentização de elementos, apresentação e testes de prototipagem.',
-                image: '/img/photos/mockup.jpeg',
+                image: '/img/photos/projects/canvaz.png',
                 label: 'desenvolvido com',
                 technologies: [
                     {

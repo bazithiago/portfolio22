@@ -5,12 +5,15 @@ import BannerBackground from './BannerBackground';
 const BannerStyles = styled.div`
 	display: flex;
 	flex-wrap: wrap;
+	height: 100vh;
+	margin-bottom: 10vh;
 	
 	@media screen and (min-width: 1024px) {
 		width: 100%;
-		height: 100vh;
+		height: 90vh;
 		align-items: center;
 		justify-content: space-between;
+		margin-bottom: 0;
 	}
 `;
 

@@ -35,6 +35,7 @@ const ProjectStyles = styled.div`
 
         .technologies {
             margin-top: 4vh;
+            margin-bottom: 12vh;
 
             .externalLinks  {
                 display: flex;
@@ -49,11 +50,10 @@ const ProjectStyles = styled.div`
     }
     
     .images {
-        height: 45vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* border: 1px solid red; */
+        margin-bottom: 4vh;
 
         img {
             width: 100%;

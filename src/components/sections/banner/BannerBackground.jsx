@@ -61,7 +61,7 @@ const BannerBackgroundStyles = styled.div`
         position: absolute;
         z-index: 1;
         left: 20vw;
-        bottom: -25vw;
+        bottom: -10vw;
         width: 125vw;
 
         @media screen and (min-width: 1024px) {
