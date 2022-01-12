@@ -269,7 +269,7 @@ export const allContent = {
             {
                 title: 'Piwi / design system',
                 description: 'App Piwi é um sistema de gerenciamento de planos de saúde voltado para corretoras e seus beneficiários. Trabalho realizado: desenvolvimento de design system, criação de styleguide com componentização de objetos em ReactJS, documentação e utilização no Storybok.',
-                image: '/img/photos/mockup.jpeg',
+                image: '/img/photos/projects/piwi.png',
                 label: 'desenvolvido com',
                 technologies: [
                     {
@@ -297,13 +297,13 @@ export const allContent = {
                     {
                         name: 'Github',
                         src: '/img/logos/github.svg',
-                        href: '',
+                        href: 'https://github.com/bazithiago/piwi-design-system',
                         target: '_blank'
                     },
                     {
                         name: 'View live',
                         src: '/img/logos/live.svg',
-                        href: '',
+                        href: 'https://61de1e04777900003aa788b6-ctgqcicsms.chromatic.com/',
                         target: '_blank'
                     }
                 ],
