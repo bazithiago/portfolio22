@@ -4,7 +4,7 @@ const imgSRC = {
     photo: '/img/layout/photo.png',
     crosses: '/img/layout/crosses.svg',
     dotsGrid: '/img/layout/dots-grid.svg',
-    wavesGrid: '/img/layout/waves-grid.svg',
+    wavesGrid: '/img/layout/waves-grid-banner.svg',
 }
 
 const BannerBackgroundStyles = styled.div`
@@ -60,14 +60,15 @@ const BannerBackgroundStyles = styled.div`
     #wavesGrid {
         position: absolute;
         z-index: 1;
-        left: 20vw;
-        bottom: -10vw;
-        width: 125vw;
+        right: 0;
+        bottom: -5vw;
+        width: 90vw;
+        opacity: 0.4;
 
         @media screen and (min-width: 1024px) {
-            right: -16vw;
+            right: 0;
             top: 11vw;
-            width: 850px;
+            width: 750px;
             bottom: auto;
             left: auto;
         }

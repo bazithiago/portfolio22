@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Database from '../../../database/index';
 import Button from '../../assets/buttons/PrimaryButton';
 import TechGroup from '../../assets/technologies/TechGroup'
-// import ContactBackground from './ContactBackground';
 
 const FinalSlideStyles = styled.div`
     display: flex;
@@ -10,7 +9,16 @@ const FinalSlideStyles = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    `
+    background-image: url('/img/layout/mobile-background.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    @media screen and (min-width: 1024px) {
+        background-image: url('/img/layout/background.png');
+    }
+`
 
 const ContactStyles = styled.div`
     display: flex;
@@ -18,7 +26,8 @@ const ContactStyles = styled.div`
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 0 10%;
+    padding: 0 10% 15%;
+    width: 100vw;
 
     h2 {
         margin-bottom: 1.25rem;
@@ -49,11 +58,16 @@ const ContactStyles = styled.div`
     .socialMedias {
         display: flex;
         justify-content: space-between;
-        width: 80%;
+        padding: 0;
+        width: 100%;
     }
 
     @media screen and (min-width: 1024px) {
-        padding: 5% 10%; 
+        padding: 5% 10% 8%; 
+
+        .socialMedias {
+            width: 32%;
+        }
     }
 `
 
@@ -92,7 +106,6 @@ export default function Contact({ content }) {
                 
             </FinalSlideStyles>
 
-            {/* <ContactBackground /> */}
         </>
     )
 }
