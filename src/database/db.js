@@ -4,12 +4,12 @@ export const allContent = {
             language: 'language',
             navbar: [
                 {
-                    title: 'about',
-                    id:'#about',
-                },
-                {
                     title: 'projects',
                     id:'#projects',
+                },
+                {
+                    title: 'about',
+                    id:'#about',
                 },
                 {
                     title: 'contact',
@@ -160,12 +160,12 @@ export const allContent = {
             language: 'idiomas',
             navbar: [
             {
-                title: 'sobre',
-                id:'#about',
-            },
-            {
                 title: 'projetos',
                 id:'#projects',
+            },
+            {
+                title: 'sobre',
+                id:'#about',
             },
             {
                 title: 'contato',
