@@ -156,8 +156,9 @@ export default function About() {
         <AboutStyles id='about'>
             <section className='bioContent'>
                 <h2>sobre</h2>
-                <p>Sou Thiago, desenvolvedor front-end web, com formação em UX e design gráfico e moro na cidade de São Paulo.</p>
-                <p>Meu interesse por código e programação iniciou ainda na graduação, desenvolvendo projetos de interface para web e aplicativos mobile. Continuei minha formação ainda no âmbito do design, com uma especialização em user experience, mas um desejo ainda permanecia: trabalhar diretamente com código. Desejo esse que me fez procurar formação complementar e capacitação prática para migrar de área e atuar como um desenvolvedor front-end.</p>
+                {/* <p>Oi, me chamo Thiago, sou desenvolvedor front-end web, com formação em UX e design gráfico e moro na cidade de São Paulo.</p>
+                <p>Meu interesse por código e programação iniciou ainda na graduação, desenvolvendo projetos de interface para web e aplicativos mobile. Continuei minha formação ainda no âmbito do design, com uma especialização em user experience, mas um desejo ainda permanecia: trabalhar diretamente com código. Desejo esse que me fez procurar formação complementar e capacitação prática para migrar de área e atuar como um desenvolvedor front-end.</p> */}
+                <p>Oi, me chamo Thiago, sou desenvolvedor front-end web e trabalho desde 2017 com projetos de interface e aplicativos mobile. Sou formado em design gráfico, com especialização em UX design e agora transformo pesquisas e desenhos de telas em código.</p>
                 <p><strong>Tecnologias que trabalho no momento</strong>:<br/>Javascript (Vanilla/ES6), React JS, SaSS/ CSS in JS (Styled-components), Webpack, NodeJS, Git e github, Storybook.</p>
                 <p><strong>O que estou estudando</strong>:<br/>Typescript, Redux, Next.js, GraphQL, Jest</p>
             </section>
