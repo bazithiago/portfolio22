@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const imgSRC = {
-    photo: '/img/layout/photo.png',
+    photo: '/img/photos/profile.png',
     crosses: '/img/layout/crosses.svg',
     dotsGrid: '/img/layout/dots-grid.svg',
     wavesGrid: '/img/layout/waves-grid-banner.svg',
