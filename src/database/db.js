@@ -268,7 +268,7 @@ export const allContent = {
             },
             {
                 title: 'Piwi / design system',
-                description: 'App Piwi é um sistema de gerenciamento de planos de saúde voltado para corretoras e seus beneficiários. Trabalho realizado: desenvolvimento de design system, criação de styleguide com componentização de objetos em ReactJS, documentação e utilização no Storybok.',
+                description: 'App Piwi é um sistema de gerenciamento de planos de saúde voltado para corretoras e seus beneficiários. Trabalho realizado: desenvolvimento de design system, criação de styleguide com componentização de objetos em ReactJS, documentação e utilização no Storybook.',
                 image: '/img/photos/projects/piwi.png',
                 label: 'desenvolvido com',
                 technologies: [
